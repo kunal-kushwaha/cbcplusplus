@@ -1,3 +1,0 @@
-/Users/SicParvisMagna/Google Drive/Documents/C Programs/C Lion/CB C++/Basics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/SicParvisMagna/Google Drive/Documents/C Programs/C Lion/CB C++/Basics/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/SicParvisMagna/Google Drive/Documents/C Programs/C Lion/CB C++/Basics/cmake-build-debug/CMakeFiles/Basics.dir

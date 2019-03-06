@@ -1,0 +1,16 @@
+int arr[5];
+
+how to assign &arr to a variable
+
+how to find sizeof an array in c++
+
+char c[] = “hey”;	// why dont we provide size here? 
+cout << c; 
+cout << *c;
+
+const char * ch = "heyy";	// ??
+cout << ch;
+cout << *ch;
+
+double d = 5.0;
+cout << d; // 5 ? why?
