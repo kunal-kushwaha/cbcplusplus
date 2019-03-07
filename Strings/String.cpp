@@ -6,14 +6,16 @@ int main() {
   string s2 = "World";
 
   const char *ch = "heyy";
-  cout << ch << endl;  // heyy
-  cout << *ch << endl; // h
+  cout << ch << endl;  // heyy  // will print till it finds a null character
+  cout << *ch << endl; // h // prints j because at first it points to h only
   char c[] = "yolo";
   cout << c << endl;  // yolo
   cout << *c << endl; // y
   // return length of string
   cout << s1.size() << endl;   // 5
   cout << s2.length() << endl; // 5
+  cout << strlen(c) << endl;
+  // strlen for c array, .size for string object
 
   // concatenate string using + operator.
   s1 = s1 + s2;

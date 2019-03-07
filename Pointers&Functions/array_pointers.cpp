@@ -7,7 +7,6 @@ int main() {
 
   cout << array << " " << &array << endl;
   cout << array + 1 << " " << &array + 1 << endl;
-
   /*
   Basically, “array” is a “pointer to the first element of array”
   but “&array” is a “pointer to whole array of 5 int”.

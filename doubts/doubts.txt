@@ -1,7 +1,6 @@
 int arr[5];
 how to assign &arr to a variable
 how to find sizeof an array in c++
-what happens at compile time and runtime for arrays? When is the size allocated?
 
 can i do something like int a[m] = fun(); where this function returns an array but the size is not known? size can be more than m.
 
@@ -12,18 +11,32 @@ cout << *c;
 what is (void *)
 intblockpointer = (int*)malloc(1000 * sizeof(int));	??
 
-const char * ch = "heyy";	// ??
-cout << ch;
-cout << *ch;
-
 double d = 5.0;
 cout << d; // 5 ? why?
+
+cout << (void *)&ch << endl; // meaning?
+
+char ch[10];
+ch[0] = 1;
+cout << strlen(ch) << endl;	// why is size here 1 when I have allocated 10? 
 
 long vs long int vs long long vs long long int :  
 size : Whats the difference if same size 8 bytes?
 datatype : long int gave l and long long int gave x ?? 
 
-int n;
-cin >> n;
-int arr[n] = {0,2,3,4,5,6};	// why error?
-cout << arr[6];
+int c[] = {6, 7, 8, 9};
+int *b = c;
+// can i do it like int *b = {1,2,3,4};
+cout << b[3];
+// same as
+cout << *(b + 3);	
+
+v.insert(2, 19); 		// error
+v.insert(v.begin(), 19);	// okay
+
+compile time vs runtime : 
+loops
+cin>> arr[i];
+cout << arr[2]; // compile time vs runtime?
+
+

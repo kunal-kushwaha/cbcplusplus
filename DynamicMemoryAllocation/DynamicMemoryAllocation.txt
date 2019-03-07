@@ -1,0 +1,43 @@
+We can allocated memory dynamically i.e. at runtime, using new, delete operators.
+
+Concept of stack and heap in Dynamic Memory Allocation :
+In heap we have the memory of variables allocated at runtime.
+std:bad_alloc exception is thrown when we are not able to allocate memory at runtime in heap
+If we allocate memory at runtime, the memory is allocated in heap and its address is stored in stack.
+suppose we allocate an array in heap, the address of first element will be stored in stack.
+when we do : int arr[10]; it is stored in stack. It will be allocated memory during the compile time.
+accessing memory in heap is slower than that compare to stack but it helps store memory.
+one more advantage : 
+we can free memory in heap, but in stack it will only be freed when the call stack of that function is over.
+
+new and delete operator in C++ : 
+syntax : (for variable) : 
+int *var = new int(30);
+or
+int *var = new int;	// will be initialised by compiler, 0 by most compilers
+
+(for arrays) : 
+int *arr = new int[n];	// allocates continuous block of memory and return the address of the first block : so there is a OVERHEAD of first accessing the address then the memory
+NOTE : new always returns a pointer of the memory location in which our variable or our array is initialised, and this pointer is stored in the stack.
+
+delete operator: 
+C++ by default has no garbage collector, so we have to manually delete all the memory allocated at runtime in heap
+in stack it will be deleted when the stack function is over
+syntax : delete variableName;
+	 delete []arr; 
+
+Dynamic Memory Allocation for 2-D Arrays : 
+int arr[3][4]; // stored in stack, stored in continuous memory location.
+
+Heap : 
+Syntax : int* *arr = new int *[no_of_rows];
+arr is pointer to pointer i.e. type of pointer to pointer is returned from new.
+in heap arr will be of size no_of_rows and will contain pointers (of type int which will store add of first block of array) to various arrays.
+in stack, we are storing the address of this pointer array.
+
+In C : in cstlib.h
+new - malloc
+delete - free
+
+
+

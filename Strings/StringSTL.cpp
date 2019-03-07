@@ -1,4 +1,3 @@
-
 #include <algorithm>
 #include <iostream>
 using namespace std;
@@ -19,13 +18,23 @@ int main() {
   cout << endl;
 
   string s3;
-  getline(cin, s3);
+  getline(cin, s3, ' ');
+  // This is little different than cin.getline(array, size)
+  // This takes input a sentence in a string
+  // s3 = cin.getline();    // wrong
   cout << s3 << endl;
 
   string arr[] = {"Apple", "Pineapple", "Mango", "Guava"};
   sort(arr, arr + 4, compare);
   for (int i = 0; i < 4; i++) {
     cout << arr[i] << " ";
+  }
+
+  char first[] = "kunal";
+  char second[] = "kunal";
+  // cin.getline(first, 5, '.');
+  if (strcmp(first, second) == 0) {
+    cout << "EQUAL" << endl;
   }
 
   return 0;
