@@ -1,0 +1,18 @@
+4 default methods available with every class
+
+Constructor :
+Constructor name is same as the class name, gets called automatically when we create an object
+
+Copy Constructor : Create a copy of the given object of the same type.
+It exists by default, we don't need to write it.
+
+Copy Assignment Operator : will make two objects equal
+
+Destructor :
+Default destructor is called when :
+1. when object is static : Destructor is called when the object goes out of scope
+2. when object is dynamic : when the user uses 'delete'
+
+Constant data members : you cannot change them
+Constant Functions : Do not update data members of a class
+Constant parameters : you don't need yo update it

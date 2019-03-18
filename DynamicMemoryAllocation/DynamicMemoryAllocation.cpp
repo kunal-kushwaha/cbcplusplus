@@ -22,7 +22,13 @@ int main() {
 
   // disalocating the memory
   delete a;
-  delete[] arr;
+  delete[] arr; // this means that if now we create a new array or something, it
+                // can take this memory even tho the value is still in this
+                // memory and if we try to acces it using arr[0] we will still
+                // get the answer. but the point of delete is that even tho
+                // there is still something in this memory and still has
+                // reference to arr, now if some other array is created it is
+                // free to override this arr memory.
   cout << arr[2];
 
   return 0;

@@ -37,5 +37,10 @@ int main() {
     cout << "EQUAL" << endl;
   }
 
+  string name = "kunal";
+  string second = name;
+
+  cout << &name << endl << &second << endl; // different locations!
+
   return 0;
 }

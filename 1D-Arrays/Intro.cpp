@@ -20,5 +20,11 @@ int main() {
     cout << a[i] << " ";
   }
 
+  int aa[] = {1, 2, 3};
+  int *bb = aa;
+
+  bb[1] = 5; // will change a too
+  cout << aa[1] << endl;
+
   return 0;
 }

@@ -12,21 +12,29 @@ int factorial(int num) {
   return ans;
 }
 
+// 1
 void swap(int *a, int *b) {
   int temp = *a;
   *a = *b;
   *b = temp;
 }
 
-int main() {
+// 2
+void swap(int &a, int &b) {
+  int temp = a;
+  a = b;
+  b = temp;
+}
 
+int main() {
   // int ans = factorial(5);
   // cout << ans << endl;
   int a = 10;
   int b = 20;
 
   cout << a << " " << b << endl;
-  swap(&a, &b); // changes
+  swap(&a, &b); // 1
+  // swap(a, b);   // 2
   cout << a << " " << b << endl;
 
   return 0;
