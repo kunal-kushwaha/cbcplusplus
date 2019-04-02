@@ -61,5 +61,23 @@ int main() {
 
   v.clear(); // everything deleted
 
+  // 2-d matric with vectors
+  int r, c, n;
+  cin >> r >> c;
+  vector<vector<int> > arr(r);
+  for(int i = 0; i < r; i++){
+      arr[i] = vector<int>(c);
+      for(int j = 0; j < c; j++){
+          cin >> n;
+          arr[i][j] = n;
+      }
+  }
+
+  for (int i = 0; i < r; i++) {
+      for (int j = 0; j < arr[i].size(); j++)
+          cout << arr[i][j] << " ";
+      cout << endl;
+  }
+
   return 0;
 }
