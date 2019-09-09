@@ -59,7 +59,7 @@ int main() {
 
   Car D(100, 200, "BMW");
   Car E(D);
-  E.name[0] = 'G'; // this will change D also because name is a pointer pointing
+  E.name[0] = 'G'; // this will change D also (if default constructor is used)because name is a pointer pointing
                    // to the same memory in heap
                    // This is why we should avoid default copy constructor which
                    // this is called shallow copy
