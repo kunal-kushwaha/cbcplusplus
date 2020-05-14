@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 class Car {
-public: // by default it is private
-  int price;
-  int model;
-  char name[20];
+  public: // by default it is private
+    int price;
+    int model;
+    char name[20];
 
-  void start() { cout << "Starting the car" << endl; }
+    void start() { cout << "Starting the car" << endl; }
 };
 
 int main() {

@@ -2,35 +2,35 @@
 #include <iostream>
 using namespace std;
 class Car {
-private:
-  int price;
-  char name[20];
+  private:
+    int price;
+    char name[20];
 
-public:
-  int model;
+  public:
+    int model;
 
-  Car() { cout << "Making a car" << endl; }
-  // Parametrised Constructor
-  Car(int price, int model, char *n) {
-    this->price = price;
-    this->model = model;
-    strcpy(name, n);
-  }
+    Car() { cout << "Making a car" << endl; }
+    // Parametrised Constructor
+    Car(int price, int model, char *n) {
+      this->price = price;
+      this->model = model;
+      strcpy(name, n);
+    }
 
-  // Copy Constructor
-  // Just for explaination. It exists by default, no need to write it.
-  Car(Car &x) {
-    cout << "Making a copy of the car" << endl;
-    strcpy(name, x.name);
-    price = x.price;
-    model = x.model;
-  }
+    // Copy Constructor
+    // Just for explaination. It exists by default, no need to write it.
+    Car(Car &x) {
+      cout << "Making a copy of the car" << endl;
+      strcpy(name, x.name);
+      price = x.price;
+      model = x.model;
+    }
 
-  void print() {
-    cout << price << endl;
-    cout << model << endl;
-    cout << name << endl;
-  }
+    void print() {
+      cout << price << endl;
+      cout << model << endl;
+      cout << name << endl;
+    }
 };
 
 int main() {
